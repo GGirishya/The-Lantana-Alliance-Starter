@@ -14,10 +14,12 @@ addStations(openStations);
 // Should render all wishlist items to the page one at a time
 function addWishlistItems(wishlist) {
   // TODO
-  for 
+  for (let i=0; i < wishlist.length; i++){
+    addWishlistElement(wishlist[i]);
+  }
   
 }
-// addWishlistItems(wishlist);
+addWishlistItems(wishlist);
 
 // Should return an array of station strings that include the user's query
 // This will automatically be called when a user clicks the search button
