@@ -26,12 +26,12 @@ addWishlistItems(wishlist);
 function filterByCity(query, stations) {
   let matches = [];
  // TODO 
-  let QueryLowerCase= query.toLowerCase();
+  let QueryLowerCase = query.toLowerCase();
 
-  for(let i=0; i<stations.length; i++){
-    if(stations[i].toLowerCase().indexof(QueryLowerCase)=! -1){
-      matches.push[]
+  for(let i=0; i< stations.length; i++){
+    if(stations[i].toLowerCase().includes(QueryLowerCase)){
+      matches.push(stations[i]);
     }
   }
-  
+  return matches;
 }
